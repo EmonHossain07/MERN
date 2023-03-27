@@ -1,2 +1,2 @@
-console.log("Hello World");
-console.log("This is my first js code");
+var x;
+console.log(x);
