@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Document</title>
+</head>
+<body>
+    
+    <h4>Last Modified Date</h4>
+    <p>H</p>
+    <p>E</p>
+    <p>L</p>
+    <p>L</p>
+    <button onclick="demo()">Click</button><br><br>
+    <button onclick="demo2()">NewWindow</button><br><br>
+    <button onclick="demo3()">ItemCount</button>
+    <script>
+        document.getElementsByTagName("p")[0].innerHTML= document.lastModified;
+        document.getElementsByTagName("p")[1].innerHTML= document.title;
+        document.getElementsByTagName("p")[2].innerHTML= document.URL;
+
+        function demo(){
+
+            document.open("text/html","replace");
+            document.write("Replace hoyese");
+            document.close();
+        }
+
+        function demo2(){
+
+            let w = window.open();
+            w.document.open();
+            w.document.write("Hello New Window");
+            w.document.close();
+}
+        function demo3(){
+
+            let myItems = document.getElementsByTagName('p');
+            let itemCount = myItems.length;
+            alert(itemCount);
+}
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <h1 id="myId">JavaScript</h1>
+    <button onclick="addStyle()">Add Style</button>
+    <button onclick="removeStyle()">Remove Style</button><br><br>
+    <script>
+
+        function addStyle(){
+            let h1Tag = document.getElementById('myId');
+            h1Tag.classList.add('text-success');
+        }
+
+        function removeStyle(){
+            let h1Tag = document.getElementById('myId');
+            h1Tag.classList.remove('text-success');
+        }
+    </script>
+</body>
+</html>

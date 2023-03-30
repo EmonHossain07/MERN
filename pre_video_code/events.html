@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="myEvent3('Load Hoyese')">
+    <button onclick="myEvent('Click hoyese')">Click</button>
+    <button onmouseover="myEvent('Mouse Over hoyese')">Mouse Over</button>
+    <button onmouseout="myEvent('Mouse Out hoyese')">Mouse Out</button><br/><br/><br/>
+
+    <input onchange="myEvent2('change hoyese')"/><br/>
+    <input onkeydown="myEvent2('Key Down hoyese')"/><br/>
+    <input onkeyup="myEvent2('Key Up hoyese')"/><br/>
+
+    <script>
+        function myEvent(msg){
+            console.log(msg);
+        }
+
+        function myEvent2(msg2){
+            console.log(msg2);
+        }
+
+        function myEvent3(msg3){
+            console.log(msg3);
+        }
+
+    </script>
+</body>
+</html>

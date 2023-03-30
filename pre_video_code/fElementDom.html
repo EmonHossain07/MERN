@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="MyId">P</p>
+    <p class="MyClass">c1</p>
+    <p class="MyClass">c2</p>
+    <p name="Pra">Name</p>
+    <p>TagName</p>
+
+    <script>
+
+        document.getElementById("MyId").innerHTML = "Modified Id";
+        document.getElementsByClassName("MyClass")[0].innerHTML = "Modified Classes";
+        document.getElementsByClassName("MyClass")[1].innerHTML = "Modified Classes2";
+        document.getElementsByName("Pra")[0].innerHTML = "Modified Name";
+        document.getElementsByTagName("p")[4].innerHTML = "Modified TagName";
+    </script>
+</body>
+</html>
