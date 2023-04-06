@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button onclick="ExcPostRequest()">ExcPostRequest</button>
+
+    <script>
+
+        function ExcPostRequest(){
+            
+            var url = "https://crud.teamrabbil.com/api/v1/CreateProduct";
+            
+            var BodyData={Img:"123",ProductCode:"123",Qty:"123",TotalPrice:"123",UnitPrice:"123"}
+
+            var configuration = {
+                method:"POST",
+                headers:{'Accept':'application/json','Content-Tyoe':'application/json'},
+                body:JSON.stringify(BodyData)
+            };
+
+            fetch(url,configuration)
+            .then(response=>response.json())
+            .then(result=>console.log(result))
+            .catch(error=>console.log(error))
+        }
+
+    </script>
+</body>
+</html>

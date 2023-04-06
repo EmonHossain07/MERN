@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="myId">h1</h1>
+    <h4>h4</h4>
+    <h6 class="myClass">h6</h6>
+    <p name="myName">p</p><br><br>
+
+    <button onclick="findElement()">Click</button>
+
+    <script>
+        function findElement(){
+            document.querySelector('#myId').innerHTML= "h1 manupulated"
+            document.querySelector('.myClass').innerHTML= "h6 manupulated"
+            document.querySelector('h4').innerHTML= "h4 manupulated"
+            document.querySelector('p[name="myName"]').innerHTML= "p manupulated"
+        }
+    </script>
+</body>
+</html>
