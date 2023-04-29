@@ -9,4 +9,4 @@ function sumArray(ar){
 }
 var ar = [1,9,10,-20]
 var sum = sumArray(ar)
-console.log(sum);
+console.log("Sum : "+sum);

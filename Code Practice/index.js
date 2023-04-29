@@ -139,20 +139,121 @@
 
 // 12 ==> ES6 Set
 
-let myMap = new Set();
+// let myMap = new Set();
 
-myMap.add("Bangladesh");
-myMap.add("India");
-myMap.add("Pakistan");
-myMap.add("Srilangka");
-myMap.add("Mayanmar");
-myMap.add("Bangladesh");
+// myMap.add("Bangladesh");
+// myMap.add("India");
+// myMap.add("Pakistan");
+// myMap.add("Srilangka");
+// myMap.add("Mayanmar");
+// myMap.add("Bangladesh");
 
-// console.log(myMap.size);
+// // console.log(myMap.size);
 
-if(myMap.has("Bangladesh")){
-    console.log("Yes");
-}
-else{
-    console.log("Hoga mara sara");
-}
+// if(myMap.has("Bangladesh")){
+//     console.log("Yes");
+// }
+// else{
+//     console.log("Hoga mara sara");
+// }
+
+
+// 13 ==> ES6 Class Object
+
+// class MyClass {
+
+//     Myfun(name){
+//         console.log(name)
+//     }
+//     Myfun2(name){
+//         console.log(name)
+//     }
+//     Myfun3(name){
+//         console.log(name)
+//     }
+//     Myfun4(name){
+//         console.log(name)
+//     }
+// }
+
+// let obj = new MyClass;
+
+// obj.Myfun('Madaripur');
+// obj.Myfun2('Bandorban');
+// obj.Myfun3('Sitakunda');
+// obj.Myfun4('Sylhet');
+
+
+// 14 ==> ES6 Class Constructor
+
+// class MyClass {
+//     constructor(a,b){
+//         this.firstNum = a
+//         this.secondNum = b
+//     }
+
+// add(){
+//     let result =  this.firstNum + this.secondNum;
+//     console.log(result);
+// }
+// }
+
+// let obj = new MyClass(20,20);
+
+// obj.add();
+
+
+// 15 ==> ES6 Class Inheritance
+
+// class parent {
+
+//     hlw1(){
+//         console.log("Hello 1");
+//     }
+
+//     hlw2(){
+//         console.log("Hello 2");
+//     }
+// }
+
+// class child extends parent{
+
+//     //Change parent class properties
+
+//     hlw2(){
+//         console.log('hell yeah');
+//     }
+// }
+
+// let obj = new parent();
+// obj.hlw1();
+// obj.hlw2();
+
+
+
+// 15 ==> ES6 Class Inheritance Super Keyword
+
+
+// class parent {
+
+//     hlw1(){
+//         console.log("Hello 1");
+//     }
+
+//     hlw2(){
+//         console.log("Hello 2");
+//     }
+// }
+
+// class child extends parent{
+
+//     //Change parent class properties
+
+//     demo(){
+//         super.hlw1();
+//         super.hlw2();
+//     }
+// }
+
+// let obj = new child();
+// obj.demo();
